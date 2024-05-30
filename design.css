@@ -1,0 +1,645 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: Poppins, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+#preview {
+    display: flex;
+    width: auto;
+}
+
+#imageFrame, #filterContainer, #homes, #locations{
+    border-bottom: 1px solid black;
+}
+
+/*nav bar desgin*/
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 1s ease-in;
+}
+
+#header.scrolled{
+    background-color: black;
+}
+
+#header nav {
+    display: flex;
+}
+    
+
+#header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+#header nav ul li a {
+    margin: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#header nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+.goHere {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: -2;
+    top: -80px;
+}
+
+/*sliding images*/
+#imageFrame {
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+#imageSlides {
+    animation-name: slidingImages;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+#image1 {
+    background-image: url("caliyaPic.jpeg");
+}
+
+#image2 {
+    background-image: url("savanaPic.png");
+}
+
+#image3 {
+    background-image: url("santeviPic.jpeg");
+}
+
+#image4 {
+    background-image: url("carmelTownHouse.jpg");
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg {
+    width: 1349px;
+    height: 645px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes slidingImages {
+    8%, 100% {
+        transform: translateX(0);
+    }
+
+    16%, 32%, 88%, 96% {
+        transform: translateX(-100%);
+    }
+
+    40%, 48%, 72%, 80% {
+        transform: translateX(-200%);
+    }
+
+    56%, 64% {
+        transform: translateX(-300%);
+    }
+}
+
+/*filter design*/
+#filterContainer {
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+}
+
+.inputs {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputs input{
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 8px;
+}
+
+.inputs label{
+    position: absolute;
+    top: -13px;
+    left: 15px;
+}
+
+#bathroom, #beds{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    height: 30px;
+    border-radius: 10px;
+}
+
+.radioButton{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.radioButton input{
+    margin: 5px;
+    width: 15px;
+    height: 15px; 
+}
+
+.inputs .labelBath, .inputs .labelBed {
+    position: relative;
+    top: 0;
+    left: 0;
+    align-content: center;
+}
+
+.showFilter{
+    display: none;
+}
+
+/*houses desgin*/
+#homes {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
+    background-color: rgb(227, 227, 227);
+    min-height: 100vh;
+    position: relative;
+}
+
+
+#homesContainer {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 20px;
+}
+
+.house {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 25px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.house:hover{
+    box-shadow: 5px 5px 15px black;
+    transform: translateY(-10px);
+}
+
+.imageOfTheHouse {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    width: 40%;
+    transition: filter 0.5s;
+}
+
+.imageBg:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.imageBg {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#caliyaSingleAttachedHouseImage {
+    background-image: url("caliyaSingleAttachedHouse.jpg");
+}
+
+#santeviSingleAttachedImage {
+    background-image: url("santeviSingleAttached.jpg");
+}
+
+#santeviDuplexImage {
+    background-image: url("santeviDuplex.jpg");
+}
+
+#savanaTownHouseCornerImage {
+    background-image: url("savanaTownHouseCorner.jpg");
+}
+
+#savanaTownHouseInnerImage {
+    background-image: url("savanaTownHouseInner.jpg");
+}
+
+#savanaDuplexImage {
+    background-image: url("savanaDuplex.png");
+}
+
+#carmelEconomicHouseImage {
+    background-image: url("carmelEconomicHouse.jpg");
+}
+
+#carmelSocializeHouseImage {
+    background-image: url("carmelSocializeHouse.png");
+}
+
+#carmelTownHouseImage {
+    background-image: url("carmelTownHouse.jpg");
+}
+
+.homeLinksContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.homeLinks {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.homeLinks:hover {
+    transform: scale(0.9);
+}
+
+.aboutHomeContainer {
+    flex-grow: 1;
+}
+
+.aboutHome {
+    margin: 5px 20px;
+}
+
+.houseName{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.housePrice{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.housePricePerMonth {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.minorHomeDetails{
+    margin: 15px 0;
+}  
+
+.floors, .bedroom, .bathroom, .measurements{
+    margin: 5px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.houseDesc p{
+    margin: 5px 10px;
+}
+
+
+/*styles for locations*/
+#locations {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    height: 392px;
+}
+
+#locationOverlay{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 8;
+}
+
+#welcoming, .welcomingHouseInfo {
+    position: absolute;
+    left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    letter-spacing: 1px;
+    z-index: 9;
+}
+
+#imageLocationContainer {
+    margin: 70px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#imageLocationContainer input{    
+    display: none;
+}
+
+
+#imageLocationContainer label {
+    display: flex;
+    width: 20%;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 25px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.sitePicOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.sitePicOverlay:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+
+label[for="savanaHouseLink"] {
+    background-image: url("savanaPic.png");
+}
+
+label[for="santeviHouseLink"] {
+    background-image: url("santeviPic.jpeg");
+}
+
+label[for="caliyaHouseLink"] {
+    background-image: url("caliyaPicZoom.jpeg");
+}
+
+label[for="carmelHouseLink"] {
+    background-image: url("carmelTownHouse.jpg");
+}
+
+.SitesInformations {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #ebebeb;
+    position: absolute;
+    z-index: 7;
+}
+
+.MapInfo{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+
+}
+
+.Map {
+    width: 65%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#savanaMap {
+    background-image: url("savanaLocation.jpeg");
+}
+
+#santeviMap {
+    background-image: url("santeviLocation.jpeg");
+}
+
+#caliyaMap {
+    background-image: url("caliyaLocation.jpeg");
+}
+
+#carmelMap {
+    background-image: url("carmelLocation.jpeg");
+}
+
+.Info {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Info p {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center; 
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mapLink {  
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 5px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.mapLink:hover{    
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.1);
+}
+
+.mapLink:active {
+    box-shadow: 0 0 0 black;
+    background-color: darkgreen;
+}
+
+@media screen and (max-width: 1024px){
+    .houseDesc p{
+        font-size: 12px;
+    }
+
+    .houseName {
+        font-size: 25px;
+    }
+
+    .housePrice {
+        font-size: 20px;
+    }
+
+    .housePricePerMonth {
+        font-size: 18px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    .logo svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    #imageLocationContainer{
+        align-items: center;
+    }
+
+    #imageLocationContainer label {
+        width: 20%;
+        height: 180px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    #filters{
+        width: 100%;
+    }
+
+    .house {
+        margin: 25px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .houseDesc h2{
+        font-size: 15px;
+    }
+
+    .houseDesc p {
+        font-size: 8.7px;
+        margin: 0;
+    }
+
+    .houseName {
+        font-size: 20px;
+    }
+
+    .housePrice {
+        font-size: 15px;
+    }
+
+    .housePricePerMonth {
+        font-size: 13px;
+    }
+
+    .logo span {
+        font-size: 10px;
+    }
+
+    .logo svg{
+        width: 15px;
+        height: 15px;
+    }
+
+    #locations{
+        height: 280px;
+    }
+
+    #welcoming, .welcomingHouseInfo {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #imageLocationContainer{
+        align-items: center;
+    }
+
+    #imageLocationContainer label {
+        width: 25%;
+        height: 120px;
+    }
+
+    .Info p {
+        font-size: 10px;
+        margin: 20px;
+    }
+
+    .mapLink {
+        padding: 10px 20px;
+        background-color: green;
+    }
+}

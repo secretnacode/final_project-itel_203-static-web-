@@ -1,0 +1,214 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: Poppins, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+/*style for nav bar input contacts*/
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    z-index: 10;
+    transition: background-color 1s ease-in;
+}
+
+#header nav {
+    display: flex;
+}
+
+
+#header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 2px;
+}
+
+#header nav ul li a {
+    margin: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#header nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+/*style for content page*/
+
+#contactContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#pictureContainer{
+    height: 40%;
+    display: flex;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+#context {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1.1px;
+}
+
+#picture{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#overlayPic{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+}
+
+.pic {
+    width: 25%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#savanaPic {
+    background-image: url("caliyaPic.jpg");
+}
+
+#santeviPic {
+    background-image: url("savanaPic.png");
+}
+
+#caliyaPic {
+    background-image: url("santeviPic.jpg");
+}
+
+#carmelPic {
+    background-image: url("carmelTownHouse.jpg");
+}
+
+#contactsIconContainer{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+}
+
+#contactIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.icons {
+    text-align: center;
+    cursor: pointer;
+    transition: display 0.5s;
+}
+
+.contactsInfo {
+    background-color: #d9d9d9;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.contactsInfo ul li{
+    list-style: none;
+    padding: 3px;
+}
+
+.contactsInfo ul li:nth-child(2){
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.contactsInfo ul li a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+
+@media screen and (max-width: 1024px) {
+    #context h1{
+        font-size: 25px;
+    }
+
+    #context p {
+        font-size: 10px;
+    }
+
+    .icons svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icons p {
+        font-size: 12px;
+    }
+
+    .contactsInfo {
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+
+    .contactsInfo ul li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icons p {
+        font-size: 10px;
+    }
+
+    .contactsInfo {
+        border-radius: 8px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .contactsInfo ul li {
+        font-size: 7px;
+    }
+}

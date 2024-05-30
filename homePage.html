@@ -1,0 +1,759 @@
+﻿ <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="design.css">
+    <title>HOUSES YOU DESIRED </title>
+</head>
+<body>
+    <!--for the nav-->
+    <div id="header">
+        <h1>Houses.com</h1>
+
+        <!--for the shortcuts/links-->
+        <nav>
+            <ul>
+                <li><a href="#aTagHomeLink">Homes</a></li>
+                <li><a href="#aTagLocationLink">Locations</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!--image for image slide-->
+    <div id="imageFrame">
+        <div id="imageSlides">
+            <div id="image1" class="images">
+                <div class="bg"></div>
+            </div>
+
+            <div id="image2" class="images">
+                <div class="bg"></div>
+            </div>
+
+            <div id="image3" class="images">
+                <div class="bg"></div>
+            </div>
+
+            <div id="image4" class="images">
+                <div class="bg"></div>
+            </div>
+        </div>
+        <div id="description">
+            <p></p>
+        </div>
+    </div>
+    
+    
+    <div id="filterContainer">
+        <div id="aTagHomeLink" class="goHere"></div>
+        <div id="filters">
+
+            <div class="inputs" id="searchContainer">
+                <div id="search">
+                    <label for="search">Type of House:</label>
+                    <input type="text" name="search" placeholder="search">
+                </div>
+            </div>
+
+            <div class="inputs" id="bedContainer">
+                <label for="beds">Bed:</label>
+                <div id="beds">
+                    <div class="radioButton">
+                        <input id="bed1" class="bed" type="radio" name="groupBed">
+                        <label class="labelBed" for="bed1">1</label>
+                    </div>
+
+                    <div class="radioButton">
+                        <input id="bed2" class="bed" type="radio" name="groupBed">
+                        <label class="labelBed" for="bed2">2</label>
+                    </div>
+
+                    <div class="radioButton">
+                        <input id="bed3" class="bed" type="radio" name="groupBed">
+                        <label class="labelBed" for="bed3">3</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inputs" id="bathroomContainer">
+                <label for="bathroom">Bathroom:</label>
+                <div id="bathroom">
+                    <div class="radioButton">
+                        <input id="bath1" class="bath" type="radio" name="groupBath">
+                        <label for="bath1" class="labelBath">1</label>
+                    </div>
+
+                    <div class="radioButton">
+                        <input id="bath2" class="bath" type="radio" name="groupBath">
+                        <label for="bath2" class="labelBath">2</label>
+                    </div>
+
+                    <div class="radioButton">
+                        <input id="bath3" class="bath" type="radio" name="groupBath">
+                        <label for="bath3" class="labelBath">3</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inputs" id="measurementContainer">
+                <div id="measurements">
+                    <label for="measurements">Measurements: <span id="measureRange"> </span></label>
+                    <input type="range" min="40" max="80" id="range">
+                </div>
+            </div>
+
+            <button class="showFilter" onclick="appearFilter()">Show Filter</button>
+        </div>
+    </div>
+
+    <!--for the houses-->
+    <section id="homes">
+        <div id="homesContainer">
+            <div id="caliyaSingleAttachedHouse" class="house">
+                <div id="caliyaSingleAttachedHouseImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="caliyaSingleAttachedInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>  
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Caliya Single Attached House</p>
+                            <p class="housePrice">₱3,000,000</p>
+                            <p class="housePricePerMonth">as low as ₱10,000 <span>per month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">53sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>caliya single attached house is in caliya site that is locacted in candelarya quezon, <br>and this house is only as low as 3 million. This house includes with 1 bathroom per <br>floor, and it's house has a measurement of 53sqm, and it will be measured 60sqm <br>if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="santeviSingleAttached" class="house">
+                <div id="santeviSingleAttachedImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="santeviSingleAttachedInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Santevi Single Attached House</p>
+                            <p class="housePrice">₱3,500,000</p>
+                            <p class="housePricePerMonth">as low as ₱15,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">56sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>santevi single attached house is in santevi site that is locacted in san vicente in <br>quezon province, and this house is only as low as 3.5 million. This house includes <br>with 1 bathroom per floor, and it's house has a measurement of 56sqm, and it <br>will be measured 80sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="santeviDuplex" class="house">
+                <div id="santeviDuplexImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="santeviDuplexInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Santevi Duplex House</p>
+                            <p class="housePrice">₱3,100,000</p>
+                            <p class="housePricePerMonth">as low as ₱10,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">56sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>santevi single attached house is in santevi site that is locacted in san vicente in <br>quezon province, and this house is only as low as 3.1 million. This house includes <br>with 1 bathroom per floor, and it's house has a measurement of 56sqm, and it <br>will be measured 80sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="savanaTownHouseCorner" class="house">
+                <div id="savanaTownHouseCornerImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="savanaTownHouseCornerInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Savana Town House Corner</p>
+                            <p class="housePrice">₱3,000,000</p>
+                            <p class="housePricePerMonth">as low as ₱10,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">52sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>savana town house corner is in savana site that is locacted in soledad<br> within san pablo city, and this house is only as low as 3 million. This house <br>includes with 1 bathroom per floor, and it's house has a measurement of 56sqm, <br>and it will be measured 64sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="savanaTownHouseInner" class="house">
+                <div id="savanaTownHouseInnerImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="savanaTownHouseInnerInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Savana Town House Inner</p>
+                            <p class="housePrice">₱3,000,000</p>
+                            <p class="housePricePerMonth">as low as ₱10,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">52sqm  </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>savana town house inner is in savana site that is locacted in soledad<br> within san pablo city, and this house is only as low as 3 million. This house <br>includes with 1 bathroom per floor, and it's house has a measurement of 52sqm, <br>and it will be measured 64sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="savanaDuplex" class="house">
+                <div id="savanaDuplexImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="savanaDuplexInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Savana Duplex House</p>
+                            <p class="housePrice">₱3,500,000</p>
+                            <p class="housePricePerMonth">as low as ₱5,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">66sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>savana duplex house is in savana site that is locacted in soledad<br> within san pablo city, and this house is only as low as 3.5 million. This house <br>includes with 1 bathroom per floor, and it's house has a measurement of 66sqm, <br>and it will be measured 75sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carmelEconomicHouse" class="house">
+                <div id="carmelEconomicHouseImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="carmelEconomicInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Carmel Economic House</p>
+                            <p class="housePrice">₱2,080,000</p>
+                            <p class="housePricePerMonth">as low as ₱5,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">52sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>carmel economic house is in carmel site that is locacted in brgy conception within <br>sanpablo city, and this house is only as low as 2.08 million. This house includes <br>with 1 bathroom per floor, and it's house has a measurement of 52sqm, and it <br>will be measured 60sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carmelSocializeHouse" class="house">
+                <div id="carmelSocializeHouseImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="carmelSocializeInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Carmel SociaLize House</p>
+                            <p class="housePrice">₱1.500,000</p>
+                            <p class="housePricePerMonth">as low as ₱5,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">3 hectars</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>carmel socialize house is in carmel site that is locacted in brgy conception within <br>sanpablo city, and this house is only as low as 1.5 million. This house includes <br>with 1 bathroom per floor, and it's house has a measurement of 52sqm, and it <br>will be measured 60sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carmelTownHouse" class="house">
+                <div id="carmelTownHouseImage" class="imageOfTheHouse">
+                    <div class="imageBg">
+                        <p class="homeLinksContainer">
+                            <a class="homeLinks" href="carmelTownHouseInteriorDesign.html">SEE MORE</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="aboutHomeContainer">
+                    <div class="aboutHome">
+                        <div class="importantHomeDetails">
+                            <p class="houseName">Carmel Town House</p>
+                            <p class="housePrice">₱3,600,000</p>
+                            <p class="housePricePerMonth">as low as ₱25,000 <span>/month</span></p>
+                        </div>
+
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">60sqm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="houseDesc">
+                            <h2>about house:</h2>
+
+                            <p>carmel town house is in carmel site that is locacted in brgy conception within <br>sanpablo city, and this house is only as low as 3.6 million. This house includes <br>with 1 bathroom per floor, and it's house has a measurement of 60sqm, and it <br>will be measured 80sqm if we add the space lot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--for the locations-->
+    <section id="locations">
+        <div id="aTagLocationLink" class="goHere"></div>
+        <p id="welcoming">LOCATIONS AND SITES:</p>
+        <div id="locationOverlay"></div>
+
+        <div id="imageLocationContainer">
+            <a href="#savanaHouseLink"></a>
+            <input type="radio" id="savanaHouseLink" name="groupSiteLinks" value="savanaHouseLink">
+            <label for="savanaHouseLink" class="radioHomeLinks">
+                <span class="sitePicOverlay"></span>
+            </label>
+
+            <input type="radio" id="santeviHouseLink" name="groupSiteLinks" value="santeviHouseLink">
+            <label for="santeviHouseLink" class="radioHomeLinks">
+                <span class="sitePicOverlay"></span>
+            </label>
+
+            <input type="radio" id="caliyaHouseLink" name="groupSiteLinks" value="caliyaHouseLink">
+            <label for="caliyaHouseLink" class="radioHomeLinks">
+                <span class="sitePicOverlay"></span>
+            </label>
+
+            <input type="radio" id="carmelHouseLink" name="groupSiteLinks" value="carmelHouseLink">
+            <label for="carmelHouseLink" class="radioHomeLinks">
+                <span class="sitePicOverlay"></span>
+            </label>
+        </div>
+
+        <div id="savanaHouseLinkInformations" class="SitesInformations">
+            <p class="welcomingHouseInfo">Welcome To Savana:</p>
+            <div class="MapInfo">
+                <div class="Map" id="savanaMap"></div>
+                <div class="Info">
+                    <p id="c">
+                        Welcome to Savana Village, Savana is located in Brgy
+                        Soledad that is within the vicinity of San Pablo City.
+                        To go there you need to ride a tricycle. Tap the botton
+                        below to proceed to map where the Savana Village is located
+                    </p>
+
+                    <a class="mapLink" href="https://www.google.com/maps/@14.0472111,121.3181604,3a,75y,127.37h,82.88t/data=!3m6!1e1!3m4!1s_ZvzxacGxCsDdtU9KZgj5Q!2e0!7i16384!8i8192?entry=ttu" target="_blank">TAP HERE</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="santeviHouseLinkInformations" class="SitesInformations">
+            <p class="welcomingHouseInfo">Welcome To Santevi:</p>
+            <div class="MapInfo">
+                <div class="Map" id="santeviMap"></div>
+                <div class="Info">
+                    <p id="c">
+                        Welcome to Savana Village, Savana is located in Brgy
+                        Soledad that is within the vicinity of San Pablo City.
+                        To go there you need to ride a tricycle. Tap the botton
+                        below to proceed to map where the Savana Village is located
+                    </p>
+
+                    <a class="mapLink" href="https://www.google.com/maps/@14.0260267,121.3423827,3a,75y,271.32h,83.97t/data=!3m6!1e1!3m4!1s9TsnAA15hi1NHkAtdUIs5Q!2e0!7i16384!8i8192?entry=ttu" target="_blank">TAP HERE</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="caliyaHouseLinkInformations" class="SitesInformations">
+            <p class="welcomingHouseInfo">Welcome To Caliya:</p>
+            <div class="MapInfo">
+                <div class="Map" id="caliyaMap"></div>
+                <div class="Info">
+                    <p id="c">
+                        Welcome to Savana Village, Savana is located in Brgy
+                        Soledad that is within the vicinity of San Pablo City.
+                        To go there you need to ride a tricycle. Tap the botton
+                        below to proceed to map where the Savana Village is located
+                    </p>
+
+                    <a class="mapLink" href="https://www.google.com/maps/@13.9301573,121.4097235,3a,75y,44.89h,91.38t/data=!3m6!1e1!3m4!1sl65bSSW2TLmczfVD7Y3RKA!2e0!7i16384!8i8192?entry=ttu" target="_blank">TAP HERE</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="carmelHouseLinkInformations" class="SitesInformations">
+            <p class="welcomingHouseInfo">Welcome To Carmel:</p>
+            <div class="MapInfo">
+                <div class="Map" id="carmelMap"></div>
+                <div class="Info">
+                    <p id="c">
+                        Welcome to Savana Village, Savana is located in Brgy
+                        Soledad that is within the vicinity of San Pablo City.
+                        To go there you need to ride a tricycle. Tap the botton
+                        below to proceed to map where the Savana Village is located
+                    </p>
+
+                    <a class="mapLink" href="https://www.google.com/maps/@14.0853379,121.3407196,3a,75y,236.66h,86.22t/data=!3m6!1e1!3m4!1suPqWQSmGQV3DIXf49Yc2lQ!2e0!7i16384!8i8192?entry=ttu" target="_blank">TAP HERE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="functions.js"></script>
+</body>
+</html>

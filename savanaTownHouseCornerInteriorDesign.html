@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interiorDesign.css">
+    <title>Interior Design</title>
+</head>
+<body>
+    <!--for the nav-->
+    <div id="header">
+        <h1>Houses.com</h1>
+
+        <!--for the shortcuts/links-->
+        <nav>
+            <ul>
+                <li><a href="homePage.html">Homes</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contentContainer">
+        <div class="content">
+            <div class="homeImage">
+                <img src="savanaTownHouseCorner.jpg" />
+                <span class="overlay"></span>
+            </div>
+
+            <div class="designContainer">
+                <div class="interiorDesignContainer">
+                    <div class="interiorHouseDesign">
+                        <img src="savanaTownHouseCornerAndInnerBedroom.jpg" alt="savana town house bed pic">
+                        <img src="savanaTownHouseCornerAndInnerMastersBedroom.jpg" alt="savana town house master bedroom pic2">
+                        <img src="savanaTownHouseCornerAndInnerCr.jpg" alt="savana town house cr pic">
+                        <img src="savanaTownHouseCornerAndInnerCr2.jpg" alt="savana town house cr pic2">
+                        <img src="savanaTownHouseCornerAndInnerLivingRoom.jpg" alt="savana town house living room pic">
+                    </div>
+
+                    <p>Bedroom:</p>
+                    <p>Master Bedroom:</p>
+                    <p>Comfort Room:</p>
+                    <p>Comfort Room 2:</p>
+                    <p>Living Room:</p>
+
+                    <button class="next" onclick="nextImg()">&gt;</button>
+                    <button class="prev" onclick="prevImg()">&lt;</button>
+                </div>
+
+                <div class="aboutHouse">
+                    <div class="homeDetailsContainer">
+                        <div class="minorHomeDetails">
+                            <div class="floors">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path></svg>
+                                    <span class="floorsLogo">Level:</span>
+                                    <span class="value"> 2</span>
+                                </div>
+                            </div>
+
+                            <div class="bedroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 9.557V3h-2v2H6V3H4v6.557C2.81 10.25 2 11.525 2 13v4a1 1 0 0 0 1 1h1v4h2v-4h12v4h2v-4h1a1 1 0 0 0 1-1v-4c0-1.475-.811-2.75-2-3.443zM18 7v2h-5V7h5zM6 7h5v2H6V7zm14 9H4v-3c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v3z"></path></svg>
+                                    <span class="floorsLogo">Bedroom:</span>
+                                    <span class="value">3</span>
+                                </div>
+                            </div>
+
+                            <div class="bathroom">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"></path></svg>
+                                    <span class="floorsLogo">Bathroom:</span>
+                                    <span class="value">2</span>
+                                </div>
+                            </div>
+
+                            <div class="measurments">
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20.875 7H3.125C1.953 7 1 7.897 1 9v6c0 1.103.953 2 2.125 2h17.75C22.047 17 23 16.103 23 15V9c0-1.103-.953-2-2.125-2zm0 8H3.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008l-.012-5.946c.007-.01.052-.046.137-.046H5v3h2V9h2v4h2V9h2v3h2V9h2v4h2V9h1.875c.079.001.122.028.125.008l.012 5.946c-.007.01-.052.046-.137.046z"></path></svg>
+                                    <span class="floorsLogo">Measurement:</span>
+                                    <span class="value">30sqm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="homeDescription">
+                        <h2>About House:</h2>
+
+                        <p> about this house is its big and spacious</p>
+                    </div>
+                </div>
+
+                <input type="button" value="Reserve This House" />
+            </div>
+        </div>
+    </div>
+
+    <script src="interiorDesignFunction.js"></script>
+</body>
+</html>
